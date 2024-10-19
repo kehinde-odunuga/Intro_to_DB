@@ -17,5 +17,5 @@ try:
     mycursor.close()
     mydb.close()
 
-except Exception as e:
+except mysql.connector.Error as e:
     print(e)
